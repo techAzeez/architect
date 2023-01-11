@@ -66,6 +66,10 @@
     background-color: rgba(227, 224, 224);
 }
 
+.header-nav.active{
+    max-height: 300px;
+}
+
 .banner{
     background-image: url(../images/banner.jpg);
     background-size: cover;
@@ -299,10 +303,17 @@ iframe{
         width: 100%;
         left: 0px;
 
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .5s;
+
     }
 
     .header-nav .nav{
         display: block;
+    }
+    .header-nav .nav li{
+        margin-bottom: 16px;
     }
 
     .menu{
